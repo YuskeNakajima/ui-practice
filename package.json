@@ -4,10 +4,11 @@
   "description": "htmlページを作成する時の雛形",
   "main": " ",
   "scripts": {
-    "build": "webpack --mode development",
+    "dev_build": "webpack --mode development",
+    "pro_build": "webpack --mode production",
     "watch": "webpack --watch",
-    "dev": "live-server dist/ | webpack --mode development --watch",
-    "pro": "live-server dist/ | webpack --mode production --watch"
+    "dev": "live-server public/ | webpack --mode development --watch",
+    "pro": "live-server public/ | webpack --mode production --watch"
   },
   "repository": {
     "type": "git",
@@ -20,9 +21,7 @@
   },
   "homepage": "https://github.com/YuskeNakajima/basic-html-set#readme",
   "devDependencies": {
-    "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.5.1",
-    "html-webpack-plugin": "^5.5.0",
     "live-server": "^1.2.1",
     "mini-css-extract-plugin": "^2.4.5",
     "sass": "^1.45.0",

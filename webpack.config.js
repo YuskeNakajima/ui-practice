@@ -1,8 +1,6 @@
 const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const FixStyleOnlyEntriesPlugin = require('webpack-fix-style-only-entries')
-const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 module.exports = (env, argv) => {
   const { mode = 'development' } = argv
@@ -10,6 +8,7 @@ module.exports = (env, argv) => {
   // const isDev = mode === 'development'
 
   return {
+    devtool: 'source-map',
     watchOptions: {
       ignored: /node_modules/
     },
@@ -17,11 +16,11 @@ module.exports = (env, argv) => {
     // entry: './src/ts/main.ts',
     entry: {
       'main': path.resolve(__dirname, './src/ts/main.ts'),
-      'style.css': path.resolve(__dirname, './src/scss/style.scss')
+      'style.css': path.resolve(__dirname, './src/scss/style.scss'),
     },
     output: {
-      path: path.resolve(__dirname, './dist/'),
-      filename: '[name].js'
+      path: path.resolve(__dirname, './public/'),
+      filename: '[name].js',
     },
     module: {
       rules: [
@@ -52,16 +51,9 @@ module.exports = (env, argv) => {
     resolve: {
       extensions: [
         '.ts', '.js',
-      ],
+      ]
     },
     plugins: [
-      new CleanWebpackPlugin({
-        cleanOnceBeforeBuildPatterns: ['**/*']
-      }),
-      new HtmlWebpackPlugin({
-        template: path.resolve(__dirname, 'src' , 'index.html'),
-        filename: 'index.html'
-      }),
       new FixStyleOnlyEntriesPlugin(),
       new MiniCssExtractPlugin({
         filename: '[name]'

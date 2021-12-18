@@ -1,3 +1,30 @@
+@import "reset";
+
 body {
   color: gray;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.logo-area {
+  & > div:nth-child(1) {
+    width: 500px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .1;
+  }
+  & > p:nth-child(2) {
+    text-align: center;
+  }
+}
+
+.h1 {
+  font-size: 30px;
 }
