@@ -4,7 +4,9 @@
   "description": "htmlページを作成する時の雛形",
   "main": " ",
   "scripts": {
-    "test": " "
+    "build": "webpack --mode development",
+    "watch": "webpack --watch",
+    "dev": "webpack-dev-server --mode development"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,13 @@
   "bugs": {
     "url": "https://github.com/YuskeNakajima/basic-html-set/issues"
   },
-  "homepage": "https://github.com/YuskeNakajima/basic-html-set#readme"
+  "homepage": "https://github.com/YuskeNakajima/basic-html-set#readme",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.5.0",
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.5.4",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.6.0"
+  }
 }
