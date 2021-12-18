@@ -1,0 +1,1 @@
+<h1 style="text-align: center;">HTMLページ作成の雛形</h1>

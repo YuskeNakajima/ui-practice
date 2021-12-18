@@ -1,0 +1,19 @@
+{
+  "name": "basic-html-set",
+  "version": "0.0.1",
+  "description": "htmlページを作成する時の雛形",
+  "main": " ",
+  "scripts": {
+    "test": " "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YuskeNakajima/basic-html-set.git"
+  },
+  "author": "YuskeNakajima",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YuskeNakajima/basic-html-set/issues"
+  },
+  "homepage": "https://github.com/YuskeNakajima/basic-html-set#readme"
+}
