@@ -35,3 +35,8 @@ table {
 textarea {
   white-space: revert;
 }
+
+/* 基本フォントサイズを 1rem=10pxにします */
+:root {
+  font-size: 62.5%;
+}
