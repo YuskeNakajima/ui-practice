@@ -1,31 +1,22 @@
-@import "reset";
+//foundation/ リセットCSSの役割
+@import "foundation/reset";
 
-body {
-  color: gray;
-}
+//setting/ 変数の定義
+@import "setting/color";
+@import "setting/typography";
 
-.container {
-  width: 100vw;
-  height: 100vh;
-  display: grid;
-  justify-items: center;
-  align-items: center;
-}
+//function/ 関数やmixinの定義
+@import "function/media-query";
 
-.logo-area {
-  & > div:nth-child(1) {
-    width: 500px;
-    height: 500px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: .1;
-  }
-  & > p:nth-child(2) {
-    font-size: 1.6rem;
-    text-align: center;
-  }
-}
+//layout/ レイアウトBlockの定義（インナー幅など）
+@import "layout/l-container";
+@import "layout/l-logo_area";
 
-.h1 {
-  font-size: 3rem;
-}
+//component/ コンポーネントBlockの定義（ボタンや見出しなど）
+
+//project/ プロジェクトBlockの定義（その他Blockすべて）
+
+//external/ 外部クラスを上書き（定義）する用（WordPressのクラスとかライブラリのクラスのベースの上書き）
+
+//utility/ 汎用クラスの定義
+@import "utility/utility";
