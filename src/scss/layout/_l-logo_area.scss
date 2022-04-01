@@ -1,33 +1,34 @@
-.logo_area {}
-.logo_area__image {
-  width: 10rem;
-  height: 10rem;
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: .1;
+.l-logo_area {
+  &__image {
+    width: 10rem;
+    height: 10rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .1;
 
-  @include mq("sm") {
-    width: 30rem;
-    height: 30rem;
-  }
+    @include mq("sm") {
+      width: 30rem;
+      height: 30rem;
+    }
 
-  @include mq("md") {
-    width: 50rem;
-    height: 50rem;
-  }
+    @include mq("md") {
+      width: 50rem;
+      height: 50rem;
+    }
 
-  @include mq("lg") {
-    width: 70rem;
-    height: 70rem;
-  }
+    @include mq("lg") {
+      width: 70rem;
+      height: 70rem;
+    }
 
-  @include mq("xl") {
-    width: 100rem;
-    height: 100rem;
+    @include mq("xl") {
+      width: 100rem;
+      height: 100rem;
+    }
   }
-}
-.logo_area__text {
-  font-size: 1.6rem;
-  text-align: center;
-  font-family: var(--font-english);
+  &__text {
+    font-size: 1.6rem;
+    text-align: center;
+    font-family: var(--font-english);
+  }
 }
