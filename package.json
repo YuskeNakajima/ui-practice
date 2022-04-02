@@ -1,7 +1,7 @@
 {
-  "name": "basic-html-set",
+  "name": "ui-practice",
   "version": "0.0.1",
-  "description": "htmlページを作成する時の雛形",
+  "description": "UI-スタイルの練習",
   "main": " ",
   "scripts": {
     "dev_build": "webpack --mode development",
@@ -10,16 +10,9 @@
     "dev": "live-server public/ | webpack --mode development --watch",
     "pro": "live-server public/ | webpack --mode production --watch"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/YuskeNakajima/basic-html-set.git"
-  },
+  "repository": "",
   "author": "YuskeNakajima",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/YuskeNakajima/basic-html-set/issues"
-  },
-  "homepage": "https://github.com/YuskeNakajima/basic-html-set#readme",
   "devDependencies": {
     "css-loader": "^6.5.1",
     "live-server": "^1.2.1",
