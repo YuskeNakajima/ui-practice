@@ -1,7 +1,2 @@
 .idea
 node_modules/
-
-public/main.js
-public/main.js.map
-public/style.css
-public/style.css.map

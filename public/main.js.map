@@ -1,0 +1,1 @@
+{"version":3,"file":"main.js","mappings":";;;;;AAAA,OAAO,CAAC,GAAG,CAAC,aAAa,CAAC","sources":["webpack://ui-practice/./src/ts/main.ts"],"sourcesContent":["console.log('hello hello')"],"names":[],"sourceRoot":""}

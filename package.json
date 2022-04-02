@@ -4,11 +4,8 @@
   "description": "UI-スタイルの練習",
   "main": " ",
   "scripts": {
-    "dev_build": "webpack --mode development",
-    "pro_build": "webpack --mode production",
-    "watch": "webpack --watch",
-    "dev": "live-server public/ | webpack --mode development --watch",
-    "pro": "live-server public/ | webpack --mode production --watch"
+    "build": "webpack --mode development",
+    "watch": "live-server public/ | webpack --mode development --watch"
   },
   "repository": "",
   "author": "YuskeNakajima",

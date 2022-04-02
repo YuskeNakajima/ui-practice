@@ -1,0 +1,20 @@
+.l-link_list {
+  --link-color: var(--color-210-light);
+  --link-font-color: var(--color-210-dark);
+  &__item {
+    display: block;
+    color: var(--link-font-color);
+    padding: 0.5rem;
+    cursor: pointer;
+    font-size: 1.6rem;
+    border-bottom-left-radius: 1rem;
+    border-left: .5rem solid var(--link-color);
+    border-bottom: .1rem solid var(--link-color);
+    &:hover {
+      color: white;
+      background-color: var(--link-color);
+      border-left: .5rem solid lightgray;
+      border-bottom: .1rem solid lightgray;
+    }
+  }
+}
