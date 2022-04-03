@@ -1,4 +1,4 @@
-<h1 style="text-align: center;">HTMLページ作成の雛形</h1>
+<h1 style="text-align: center;">UI practice</h1>
 
 ## SCSSフォルダ・ファイル構成
 - setting/ 変数の定義
