@@ -4,6 +4,7 @@
 
   display: flex;
   background-color: white;
+
   &__item {
     display: block;
     font-size: 1.6rem;
@@ -16,19 +17,20 @@
     border-top-right-radius: var(--border-radius);
 
     &:hover {
-      background-color: lightgray;
+      background-color: var(--back-color);
+      filter: brightness(160%);
       color: white;
     }
+
     &-active {
       font-weight: 900;
       color: black;
-      background-color: var(--color-000-light);
-      border-left: var(--border-weight) solid black;
-      border-right: var(--border-weight) solid black;
-      border-top: var(--border-weight) solid black;
+      background-color: var(--back-color);
       z-index: 100;
+
       &:hover {
-        background-color: var(--color-000-light);
+        background-color: var(--back-color);
+        filter: brightness(100%);
         color: black;
       }
     }

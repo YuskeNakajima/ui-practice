@@ -1,4 +1,12 @@
 .l-normal_container {
+  --back-color: var(--color-120-light);
+
   max-width: min(100ch, 100%);
   margin: 0 auto;
+
+  &__content {
+    width: 100%;
+    height: 80vh;
+    background-color: var(--back-color);
+  }
 }
