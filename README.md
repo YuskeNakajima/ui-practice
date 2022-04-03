@@ -1,5 +1,8 @@
 <h1 style="text-align: center;">UI practice</h1>
 
+## github pages
+https://yuskenakajima.github.io/ui-practice/public/
+
 ## SCSSフォルダ・ファイル構成
 - setting/ 変数の定義
   - _color.scss 色の定義
